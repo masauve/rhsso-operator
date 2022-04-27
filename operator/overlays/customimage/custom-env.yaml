@@ -1,0 +1,10 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  name: rhsso-operator
+  namespace: sso-test
+spec:
+  config:
+    env:
+    - name: RELATED_IMAGE_RHSSO_OPENJDK
+      value: quay.io/msauve/sso75-openshift-rhel8 
